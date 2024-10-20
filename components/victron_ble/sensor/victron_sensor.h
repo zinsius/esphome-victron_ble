@@ -35,6 +35,7 @@ enum class VICTRON_SENSOR_TYPE {
   TEMPERATURE,
   TIME_TO_GO,
   YIELD_TODAY,
+  PANEL_VOLTAGE,
 
   // SMART_LITHIUM
   BALANCER_STATUS,
@@ -122,6 +123,8 @@ static const char *enum_to_c_str(const VICTRON_SENSOR_TYPE val) {
       return "TIME_TO_GO";
     case VICTRON_SENSOR_TYPE::YIELD_TODAY:
       return "YIELD_TODAY";
+    case VICTRON_SENSOR_TYPE::PANEL_VOLTAGE:
+      return "PANEL_VOLTAGE";
 
       // SMART_LITHIUM
     case VICTRON_SENSOR_TYPE::BALANCER_STATUS:
